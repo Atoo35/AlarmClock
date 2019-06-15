@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Timer">
+
+    <Chronometer
+        android:id="@+id/c1"
+        android:layout_width="160dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:countDown="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/hh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="190dp"
+        android:textColor="#ffffff"
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+        android:text="@string/_00" />
+
+    <EditText
+        android:id="@+id/mm"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/hh"
+        android:layout_marginStart="156dp"
+        android:textColor="#ffffff"
+        android:ems="10"
+
+        android:inputType="numberDecimal"
+        android:text="@string/_00" />
+
+    <EditText
+        android:id="@+id/ss"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/hh"
+        android:layout_alignEnd="@+id/c1"
+        android:layout_marginTop="0dp"
+        android:textColor="#ffffff"
+        android:layout_marginEnd="2dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/_00" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="141dp"
+        android:layout_toEndOf="@+id/hh"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="Start" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/hh"
+        android:layout_marginTop="134dp"
+        android:ems="10"
+        android:enabled="false"
+        android:text="HH" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mm"
+        android:layout_alignTop="@+id/editText8"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:enabled="false"
+        android:text="MM" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText8"
+        android:layout_marginEnd="114dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:enabled="false"
+        android:text="SS" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/b2"
+        android:layout_toEndOf="@+id/hh"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:text="Stop" />
+
+</RelativeLayout>
